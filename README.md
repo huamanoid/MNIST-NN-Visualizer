@@ -5,6 +5,7 @@ We create a Neural Network Visualizer Web App
 with Python, Streamlit, Keras, and Flask.
 
 ### Set up
-- run python ml_server.py in background
-    (A Flask server)
+- pip -r install requirements.txt
+- python ml_server.py
+    (run this flask server in background)
 - streamlit run app.py
