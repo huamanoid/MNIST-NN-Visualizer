@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Deep Learning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .selectorDiv {
+            padding: 1em;
+        }
+
+        .imageDiv {
+            padding: 10px;
+            height: 234px;
+            width: 234px;
+            border: 1px solid black;
+        }
+
+        .predictionDiv {
+            padding: 1em;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="loadingDiv">Loading Model...</div>
+        <div class="row">
+            <div class="col">
+                 <div class="selectorDiv">
+                <input type="file" id="inputImage" onchange="readURL(this)" disabled>
+            </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col">
+                <div class="imageDiv">
+                        <img src="" alt="Selected image will appear here" id="imageSrc" />
+                    </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-12">
+                <div class="predictionDiv">
+            <h2>Predictions</h2>
+            <ol class="predictionList"></ol>
+        </div>
+    
+            </div>
+        </div>
+        <a href="https://amankr.in" target="_blank">Link to my website</a>
+    </div>
+    
+  
+  
+    
+</body>
+
+</html>
